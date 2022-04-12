@@ -1,3 +1,6 @@
 [submodule "project"]
 	path = client
 	url = https://github.com/yomi-um/project.git
+[submodule "client"]
+	path = client
+	url = https://github.com/yomi-um/project_client.git
