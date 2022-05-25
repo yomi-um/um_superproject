@@ -4,6 +4,6 @@
 [submodule "server"]
 	path = server
 	url = https://github.com/yomi-um/project_server.git
-[submodule "web_abb"]
-	path = web_abb
-	url = https://github.com/yomi-um/project_web_abb
+[submodule "web_app"]
+	path = web_app
+	url = https://github.com/yomi-um/project_web_app
