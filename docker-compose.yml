@@ -10,6 +10,8 @@ services:
       NODE_ENV: production
     ports:
       - 3001:3001
+    volumes:
+      - ./server/public/images:/node/public/images
   webapp:
     image: webapp
     build:
