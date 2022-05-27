@@ -8,12 +8,11 @@ services:
       dockerfile: ./Dockerfile
     environment:
       NODE_ENV: production
-      DEEPFACE_HOME: /node/scripts
     ports:
       - 3001:3001
     volumes:
       - ./server/public/images:/node/public/images
-      - ./server/scripts:/node/scripts
+      - ./server/controllers:/node/controllers
   webapp:
     image: webapp
     build:
@@ -23,3 +22,14 @@ services:
       NODE_ENV: production
     ports:
       - 3000:3000
+  face:
+    image: face
+    build:
+      context: face
+      dockerfile: ./Dockerfile
+    environment:
+      DEEPFACE_HOME: /usr/src/app
+    ports:
+      - 5000:5000
+    volumes:
+      - ./face:/usr/src/app

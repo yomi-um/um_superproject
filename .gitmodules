@@ -7,3 +7,6 @@
 [submodule "web_app"]
 	path = web_app
 	url = https://github.com/yomi-um/project_web_app
+[submodule "face"]
+	path = face
+	url = https://github.com/yomi-um/project_face
