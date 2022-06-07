@@ -12,7 +12,6 @@ services:
       - 3001:3001
     volumes:
       - ./server/public/images:/node/public/images
-      - ./server/controllers:/node/controllers
   webapp:
     image: webapp
     build:
@@ -31,5 +30,3 @@ services:
       DEEPFACE_HOME: /usr/src/app
     ports:
       - 5000:5000
-    volumes:
-      - ./face:/usr/src/app
